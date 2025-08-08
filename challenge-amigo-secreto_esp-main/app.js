@@ -1,10 +1,18 @@
-// El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
-/*Fucionalidades:
-Agregar nombres: Los usuarios escribirán el nombre de un amigo en un campo de texto y lo agregarán a una lista visible al hacer clic en "Adicionar".
+//1.Inicia declarando una variable de tipo array, que almacenará los nombres de los amigos ingresados.
+//Lista donde se almacenan los nombres ingresados.
+let amigos = [];
 
-Validar entrada: Si el campo de texto está vacío, el programa mostrará una alerta pidiendo un nombre válido.
+// Capturamos los elementos del DOM
+const inputAmigo = document.getElementById("amigo");
+const listaAmigos = document.getElementById("listaAmigos");
+const resultado = document.getElementById("resultado");
 
-Visualizar la lista: Los nombres ingresados aparecerán en una lista debajo del campo de entrada.
+// Función para agregar un amigo
+function agregarAmigo() {
+  // Aquí pondremos la lógica después
+}
 
-Sorteo aleatorio: Al hacer clic en el botón "Sortear Amigo", se seleccionará aleatoriamente un nombre de la lista y se mostrará en la página.
-*/
+// Función para sortear un amigo
+function sortearAmigo() {
+  // Aquí pondremos la lógica después
+}
