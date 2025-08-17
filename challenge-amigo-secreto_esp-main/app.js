@@ -1,18 +1,31 @@
-//1.Inicia declarando una variable de tipo array, que almacenará los nombres de los amigos ingresados.
 //Lista donde se almacenan los nombres ingresados.
 let amigos = [];
 
-// Capturamos los elementos del DOM
-const inputAmigo = document.getElementById("amigo");
-const listaAmigos = document.getElementById("listaAmigos");
-const resultado = document.getElementById("resultado");
-
-// Función para agregar un amigo
+//implementa una funcion para agregar amigos.
 function agregarAmigo() {
-  // Aquí pondremos la lógica después
+  let nombreAmigo = document.getElementById("amigo").value;
+  if (validarNombre(nombreAmigo)) {
+    //continuar el guardado de datos
+    amigos.push(nombreAmigo);
+    document.getElementById("amigo").value = "";
+  } else {
+    alert("Por favor, inserte un monbre.");
+  }
 }
 
-// Función para sortear un amigo
-function sortearAmigo() {
-  // Aquí pondremos la lógica después
+function validarNombre(amigo) {
+  if (amigo === "") {
+    return false;
+  } else {
+    return true;
+  }
+}
+
+function agregarLista() {
+  let lista = document.getElementById("listaAmigos");
+  lista.innerHTML = "";
+  for (let index = 0; index < amigos.length; index++) {
+    lista.innerHTML = lista.innerHTML 
+  }
+    
 }
